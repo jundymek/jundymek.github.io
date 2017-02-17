@@ -1,0 +1,123 @@
+.container-fluid.top{
+    background-image: url("../images/background.jpg");
+    /*background-color: #edeef2;*/
+}
+
+.container-fluid.middle{
+    background-image: url("../images/background1.jpg");
+    /*background-color: #edeef2;*/
+}
+
+.navbar {
+    background-image: url("../images/background.jpg");
+}
+
+.caption {
+    background-image: url("../images/background1.jpg");
+    color: #929499;
+}
+
+.navbar-brand {
+    font-family: 'Audiowide';
+    color: #FF9422;
+}
+
+li a{
+    color:red;
+}
+
+p.captions {
+    color: white;
+}
+
+h1 {
+    font-family: 'Audiowide';
+    color: #FF9422;
+    margin-top:80px;
+    margin-bottom:80px;
+}
+
+h3 {
+    font-family: 'Audiowide';
+    color: #FF9422;
+}
+
+html, body {
+    height: 100%;
+}
+
+.fill { 
+    min-height: 100%;
+}
+
+.contact {
+    min-height: 70%
+}
+
+.thumbnail {
+    border-radius: 0px;
+}
+
+.form-control {
+    border-radius:0px;
+}
+
+.form-label {
+    font-family: 'Audiowide';
+    color: #FF9422;
+}
+
+
+.vertical-center {
+   position: absolute;
+   top: 30%;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   margin: auto;
+  }
+
+
+/*Terminal addon style*/
+
+.terminal {
+    width: 60%;
+    font-size: 26px;
+    color: #00fd55;
+    letter-spacing: 2px;
+    margin:50px auto;
+}
+
+.terminal::before {
+    content: ">";
+    margin-right: 10px;
+}
+
+/*Bootstrap css style*/
+
+.form-control {
+    border-radius:0px;
+    background-image: url("../images/background.jpg");
+}
+
+.form-control:focus {
+    border-color: #FF9422;
+}
+
+.form-label {
+    font-family: 'Audiowide';
+    color: #FF9422;
+}
+
+.btn-success {
+    border-radius:0px;
+    font-family: 'Audiowide';
+    background-color: #FF9422 ;
+}
+
+/*Font awesome style*/
+
+.fa.color {
+    color: #FF9422;
+    margin-left: 10px;
+}
