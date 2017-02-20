@@ -7,6 +7,7 @@ $(document).ready(function() {
     //         scale: 1.3,
     //     });
     // });
+
     $("figure").mouseleave(
         function() {
             $(this).removeClass("hover");

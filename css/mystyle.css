@@ -96,6 +96,7 @@ html, body {
 .form-control {
     border-radius:0px;
     background-image: url("../images/background.jpg");
+    color: white;
 }
 
 .form-control:focus {
