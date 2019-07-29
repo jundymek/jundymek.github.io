@@ -1,40 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Site title</title>
+  <meta name="description" content="Jundymek portfolio page" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="Jundymek portfolio" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="Jundymek portfolio page" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="https://jundymek.github.io" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://jundymek.github.io/assets/img/cover.png" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
 
-    <script src="js/main.js"></script>
-  </body>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <main class="main">
+    <header class="header">
+      <h1 class="header__title">Hey there! 👋 My name is Maciej and I’m an aspiring Frontend developer and a keen Star
+        Wars fan.</h1>
+      <p class="header__paragraph">You might be interested in checking the list of my skills. Don’t forget to have a
+        glimpse at my projects. Currently I’m looking for a new challenges so if you have one - contact me 😊</p>
+      <a class="header__email" href="mailto: abc@example.com">jundymek@gmail.com</a>
+    </header>
+    <section class="skills">
+      <h2 class="skills__title">My skills</h2>
+      <section class="skill-group">
+        <h3 class="skill-group__title">Working knowledge</h3>
+        <ul class="skill-list">
+          <li class="skill-list__element">Semantic HTML5</li>
+          <li class="skill-list__element">Flexbox</li>
+          <li class="skill-list__element">CSS grid</li>
+          <li class="skill-list__element">Forms</li>
+          <li class="skill-list__element">Markdown</li>
+          <li class="skill-list__element">JS:DOM manipulation</li>
+          <li class="skill-list__element">JS:Local storage</li>
+          <li class="skill-list__element">Sass</li>
+          <li class="skill-list__element">Figma</li>
+        </ul>
+      </section>
+      <section class="skill-group">
+        <h3 class="skill-group__title">Know something about</h3>
+        <ul class="skill-list">
+          <li class="skill-list__element">Javascript ES6+features</li>
+          <li class="skill-list__element">Progressive web apps</li>
+          <li class="skill-list__element">CSS animations</li>
+          <li class="skill-list__element">Git</li>
+          <li class="skill-list__element">Working with API</li>
+          <li class="skill-list__element">Accesibility</li>
+          <li class="skill-list__element">NPM scripts</li>
+        </ul>
+      </section>
+      <section class="skill-group">
+        <h3 class="skill-group__title">Want to learn</h3>
+        <ul class="skill-list">
+          <li class="skill-list__element">React JS</li>
+          <li class="skill-list__element">Typescript</li>
+          <li class="skill-list__element">Node JS</li>
+          <li class="skill-list__element">Gatsby</li>
+          <li class="skill-list__element">Electron</li>
+          <li class="skill-list__element">Websockets</li>
+          <li class="skill-list__element">Serwer side rendering</li>
+        </ul>
+      </section>
+    </section>
+    <section class="projects">
+      <h2 class="projects__title">Recent projects</h2>
+      <p class="projects__paragraph">I started my frontend developer path in 2003. Since then, I’ve built some projects.
+        Here’s the list of the things I’ve done so far.</p>
+        <section class="project">
+          <h3 class="project__title">wtf-api</h3>
+          <p class="project__description">Simple github api testing</p>
+          <div class="project__links-wrapper">
+            <a href="" class="project__link">Demo</a>
+            <a href="" class="project__link">Github</a>
+          </div>
+        </section>
+        <section class="project">
+          <h3 class="project__title">wtf-api</h3>
+          <p class="project__description">Simple github api testing</p>
+          <div class="project__links-wrapper">
+            <a href="" class="project__link">Demo</a>
+            <a href="" class="project__link">Github</a>
+          </div>
+        </section>
+        <section class="project">
+          <h3 class="project__title">wtf-api</h3>
+          <p class="project__description">Simple github api testing</p>
+          <div class="project__links-wrapper">
+            <a href="" class="project__link">Demo</a>
+            <a href="" class="project__link">Github</a>
+          </div>
+        </section>
+        <section class="project">
+          <h3 class="project__title">wtf-api</h3>
+          <p class="project__description">Simple github api testing</p>
+          <div class="project__links-wrapper">
+            <a href="" class="project__link">Demo</a>
+            <a href="" class="project__link">Github</a>
+          </div>
+        </section>
+    </section>
+    <footer class="footer">
+      <h3 class="footer__title">Contact me</h3>
+      <p class="footer__paragraph">I’m open for new opportunities. If you have one for me we should talk!</p>
+      <div class="footer__links-wrapper">
+        <a href="" class="footer__link"></a>
+        <a href="" class="footer__link"></a>
+        <a href="" class="footer__link"></a>
+      </div>
+      <a href="" class="footer__email">jundymek@gmail.com</a>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
