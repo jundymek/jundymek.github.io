@@ -75,6 +75,24 @@ body {
     width: 100%;
     margin-top: 180px;
     font-style: normal;
+    &__image {
+      display: block;
+      width: 104px;
+      height: 104px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1px;
+    }
+    &__image-wrapper {
+      display: block;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      width: 122px;
+      height: 122px;
+      border: 8px solid #CBD2D9;
+      border-radius: 50%;
+    }
     &__email {
         color: $azure;
         font-weight: 500;
