@@ -23,8 +23,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-left: 128px;
-    padding-right: 128px;
+    padding-left: 100px;
+    padding-right: 100px;
     font-family: "Poppins", sans-serif;
 }
 
@@ -65,6 +65,78 @@ body {
     }
 }
 
+.skill-group {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 100px;
+    width: 100%;
+    &__title {
+        margin: 0;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 68px;
+        width: 100%;
+        position: relative;
+        &--first{
+          &:before {
+              position: absolute;
+              content: "";
+              height: 4px;
+              width: 80px;
+              border-radius: 8px;
+              transform: matrix(1, 0, 0, -1, 0, 0);
+              background: #06c847;
+          }
+        }
+        &--second{
+          &:before {
+              position: absolute;
+              content: "";
+              height: 4px;
+              width: 80px;
+              border-radius: 8px;
+              transform: matrix(1, 0, 0, -1, 0, 0);
+              background: #653CAD;
+          }
+        }
+        &--third{
+          &:before {
+              position: absolute;
+              content: "";
+              height: 4px;
+              width: 80px;
+              border-radius: 8px;
+              transform: matrix(1, 0, 0, -1, 0, 0);
+              background: #2251CC;
+          }
+        }
+    }
+}
+
+.skill-list {
+    margin-left: 100px;
+    margin-top: 24px;
+    column-count: 2;
+    column-gap: 30px;
+    &__element {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 40px;
+      max-width: 279px;
+      list-style-type: none;
+      color: #52606D;
+      &--first{
+        list-style-image: url(../assets/img/check-circle.png)
+      }
+      &--second{
+        list-style-image: url(../assets/img/check-circle-purple.png)
+      }
+      &--third{
+        list-style-image: url(../assets/img/check-circle-blue.png)
+      }
+    }
+}
+
 .skills {
     margin-top: 200px;
     &__title {
@@ -72,11 +144,12 @@ body {
         font-weight: 600;
         font-size: 36px;
         line-height: 48px;
-      }
-      &__separator {
+    }
+    &__separator {
         width: 100%;
         margin-top: -15px;
-        border-bottom: 2px solid #CBD2D9;
-        opacity: .5;
-      }
+        border-bottom: 2px solid #cbd2d9;
+        opacity: 0.5;
+        margin-bottom: 156px;
     }
+}
