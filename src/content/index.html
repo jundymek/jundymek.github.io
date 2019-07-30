@@ -30,8 +30,10 @@
     <header class="header">
       <h1 class="header__title">Hey there! 👋 My name is Maciej and I’m an aspiring Frontend developer and a keen Star
         Wars fan.</h1>
-      <p class="header__paragraph">You might be interested in checking the list of <a class="header__link" href="#skills">my skills</a>. Don’t forget to have a
-        glimpse at <a class="header__link" href="#projects">my projects</a>. Currently I’m looking for a new challenges so if you have one - <a class="header__link" href="#footer">contact me</a> 😊</p>
+      <p class="header__paragraph">You might be interested in checking the list of <a class="header__link"
+          href="#skills">my skills</a>. Don’t forget to have a
+        glimpse at <a class="header__link" href="#projects">my projects</a>. Currently I’m looking for a new challenges
+        so if you have one - <a class="header__link" href="#footer">contact me</a> 😊</p>
       <a class="header__email" href="mailto: abc@example.com">jundymek@gmail.com</a>
     </header>
     <section class="skills" id="skills">
@@ -77,49 +79,65 @@
       </section>
     </section>
     <section class="projects" id="projects">
-      <h2 class="projects__title">Recent projects</h2>
-      <p class="projects__paragraph">I started my frontend developer path in 2003. Since then, I’ve built some projects.
-        Here’s the list of the things I’ve done so far.</p>
+      <header class="projects-header">
+        <h2 class="projects-header__title">Recent projects</h2>
+        <p class="projects-header__paragraph">I started my frontend developer path in 2003. Since then, I’ve built some
+          projects.
+          Here’s the list of the things I’ve done so far.</p>
+      </header>
+      <div class="project-list-wrapper">
         <section class="project">
-          <h3 class="project__title">wtf-api</h3>
-          <p class="project__description">Simple github api testing</p>
+          <div class="project__content">
+            <h3 class="project__title">wtf-api</h3>
+            <p class="project__description">Simple github api testing</p>
+          </div>
+          <div class="project__links-wrapper">
+              <img src="/assets/img/demo_icon.png" alt="Demo button." class="project__link-icon"><a href="" class="project__link">Demo</a>
+            <span class="project__link-separator"></span>
+            <img src="/assets/img/code_icon.png" alt="Code button." class="project__link-icon"><a href="" class="project__link">Github</a>
+          </div>
+        </section>
+        <section class="project">
+          <div class="project__content">
+            <h3 class="project__title">wtf-api</h3>
+            <p class="project__description">Simple github api testing</p>
+          </div>
           <div class="project__links-wrapper">
             <a href="" class="project__link">Demo</a>
+            <span class="project__link-separator"></span>
             <a href="" class="project__link">Github</a>
           </div>
         </section>
         <section class="project">
-          <h3 class="project__title">wtf-api</h3>
-          <p class="project__description">Simple github api testing</p>
+          <div class="project__content">
+            <h3 class="project__title">wtf-api</h3>
+            <p class="project__description">Simple github api testing</p>
+          </div>
           <div class="project__links-wrapper">
             <a href="" class="project__link">Demo</a>
+            <span class="project__link-separator"></span>
             <a href="" class="project__link">Github</a>
           </div>
         </section>
         <section class="project">
-          <h3 class="project__title">wtf-api</h3>
-          <p class="project__description">Simple github api testing</p>
+          <div class="project__content">
+            <h3 class="project__title">wtf-api</h3>
+            <p class="project__description">Simple github api testing</p>
+          </div>
           <div class="project__links-wrapper">
             <a href="" class="project__link">Demo</a>
+            <span class="project__link-separator"></span>
             <a href="" class="project__link">Github</a>
           </div>
         </section>
-        <section class="project">
-          <h3 class="project__title">wtf-api</h3>
-          <p class="project__description">Simple github api testing</p>
-          <div class="project__links-wrapper">
-            <a href="" class="project__link">Demo</a>
-            <a href="" class="project__link">Github</a>
-          </div>
-        </section>
+        </dic>
     </section>
     <footer class="footer" id="footer">
       <h3 class="footer__title">Contact me</h3>
       <p class="footer__paragraph">I’m open for new opportunities. If you have one for me we should talk!</p>
       <div class="footer__links-wrapper">
-        <a href="" class="footer__link"></a>
-        <a href="" class="footer__link"></a>
-        <a href="" class="footer__link"></a>
+        <a href="" class="footer__link"><img src="/assets/img/fb_icon.png" alt="Facebook icon"></a>
+        <a href="" class="footer__link"><img src="/assets/img/github_icon.png" alt="Github icon"></a>
       </div>
       <a href="" class="footer__email">jundymek@gmail.com</a>
     </footer>
