@@ -310,7 +310,8 @@ template {
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif; }
 
 *,
 *:before,
@@ -372,10 +373,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  font-family: "Poppins", sans-serif;
   border: 16px solid #171f3f; }
 
 .header {
@@ -427,14 +424,16 @@ body {
     line-height: 56px; }
 
 .project {
-  display: block;
   width: 100%;
   background: #ffffff;
   -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
           box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
   border-radius: 8px; }
   .project__content {
-    margin-left: 32px; }
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 48px;
+    min-height: 400px; }
   .project__description {
     font-weight: 300;
     font-size: 18px;
@@ -470,6 +469,8 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
+  .project__logo {
+    margin-bottom: -10px; }
   .project__title {
     font-weight: 600;
     font-size: 20px;
@@ -554,6 +555,7 @@ body {
     font-size: 18px;
     line-height: 40px;
     max-width: 279px;
+    width: 100%;
     list-style-type: none;
     color: #52606d; }
     .skill-list__element--first {
