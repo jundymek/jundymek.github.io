@@ -32,7 +32,7 @@ const listRepos = (data) => {
                 <div class="project__content">
                     <img class="project__logo" src="/assets/img/github_project_icon.png" alt="Github logo.">
                     <h3 class="project__title">${name}</h3>
-                    <p class="project__description">${description}</p>
+                    <p class="project__description">${description ? description : 'No description for this project'}</p>
                 </div>
                 <div class="project__links-wrapper">
                 <img src="/assets/img/demo_icon.png" alt="Demo button." class="project__link-icon"><a href="${live}"
