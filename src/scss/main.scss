@@ -38,7 +38,7 @@ body {
         position: relative;
         &::after {
             position: absolute;
-            margin: 30px 0 -20px -100%;
+            margin: 2.2rem 0 0 -100%;
             content: "";
             border-bottom: 3px solid $azure;
             border-radius: 41px;
@@ -366,7 +366,7 @@ body {
 
 .skill-list {
     margin-left: 6vw;
-    margin-top: 1.5rem;
+    margin-top: 1.4rem;
     column-count: 2;
     column-gap: 1.875rem;
     font-size: 1.125rem;
@@ -378,14 +378,14 @@ body {
     }
     &__element {
         font-weight: normal;
-        line-height: 40px;
+        line-height: 2.5rem;
         max-width: 279px;
         width: 100%;
         list-style-type: none;
         color: $shuttlegray;
         margin-left: 10px;
         margin-top: -4px;
-        top: -12px;
+        top: -10px;
         position: relative;
         &::before {
             content: "";
@@ -395,9 +395,9 @@ body {
             left: -28px;
             top: 10px;
             @media (max-width: $mobile) {
-                width: 12px;
-                height: 12px;
-                top: 14px;
+                width: 0.85rem;
+                height: 0.85rem;
+                top: 0.8rem;
             }
         }
         &--first::before {

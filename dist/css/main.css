@@ -374,7 +374,7 @@ body {
     position: relative; }
     .footer__email::after {
       position: absolute;
-      margin: 30px 0 -20px -100%;
+      margin: 2.2rem 0 0 -100%;
       content: "";
       border-bottom: 3px solid #0593FB;
       border-radius: 41px;
@@ -708,7 +708,7 @@ body {
 
 .skill-list {
   margin-left: 6vw;
-  margin-top: 1.5rem;
+  margin-top: 1.4rem;
   -webkit-column-count: 2;
      -moz-column-count: 2;
           column-count: 2;
@@ -727,14 +727,14 @@ body {
               padding-inline-start: 1.14rem; } }
   .skill-list__element {
     font-weight: normal;
-    line-height: 40px;
+    line-height: 2.5rem;
     max-width: 279px;
     width: 100%;
     list-style-type: none;
     color: #52606D;
     margin-left: 10px;
     margin-top: -4px;
-    top: -12px;
+    top: -10px;
     position: relative; }
     .skill-list__element::before {
       content: "";
@@ -745,9 +745,9 @@ body {
       top: 10px; }
       @media (max-width: 640px) {
         .skill-list__element::before {
-          width: 12px;
-          height: 12px;
-          top: 14px; } }
+          width: 0.85rem;
+          height: 0.85rem;
+          top: 0.8rem; } }
     .skill-list__element--first::before {
       background-image: url(../assets/img/check-circle.png); }
       @media (max-width: 640px) {
