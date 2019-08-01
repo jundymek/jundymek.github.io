@@ -24,13 +24,13 @@ body {
 .footer {
     background: $bigstone;
     color: #ffffff;
-    padding-bottom: 132px;
+    padding-bottom: 8.25rem;
     height: auto;
     &__email {
         color: $azure;
         font-weight: 500;
         text-decoration: none;
-        margin-left: 9vw;
+        margin-left: 6vw;
         font-size: 1.25rem;
         line-height: 2rem;
         position: relative;
@@ -44,23 +44,23 @@ body {
         }
     }
     &__link {
-        margin-right: 10px;
-        margin-bottom: 32px;
+        margin-right: 0.625rem;
+        margin-bottom: 2rem;
     }
     &__links-wrapper {
-        margin-left: 9vw;
+        margin-left: 6vw;
         display: flex;
         flex-direction: row;
     }
     &__paragraph {
         max-width: 90vw;
-        margin-left: 9vw;
+        margin-left: 6vw;
         font-weight: 300;
         font-size: 1.25rem;
         line-height: 2.25rem;
     }
     &__title {
-        margin-left: 9vw;
+        margin-left: 6vw;
         font-weight: 600;
         font-size: 2rem;
         line-height: 44px;
@@ -92,11 +92,11 @@ body {
 }
 
 .header {
-    padding: 180px 0px 0 9vw;
-    max-width: 761px;
+    padding: 6vw 0px 0 6vw;
+    max-width: 840px;
     width: 100%;
     @media (max-width: $mobile) {
-        padding: 64px 16px 0 16px;
+        padding: 4.57rem 1.14rem 0 1.14rem;
     }
     &__image {
         display: block;
@@ -121,9 +121,11 @@ body {
         font-weight: 500;
         text-decoration: none;
         position: relative;
+        top: 1.87rem;
         &::after {
             position: absolute;
-            margin: 30px 0 -20px -100%;
+            left: 0;
+            margin: 30px 0 -20px 0;
             content: "";
             border-bottom: 3px solid $azure;
             border-radius: 41px;
@@ -135,16 +137,20 @@ body {
         font-weight: 500;
     }
     &__paragraph {
-        max-width: 681px;
+        max-width: 680px;
         font-weight: 300;
-        font-size: 20px;
-        line-height: 36px;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
         color: $shuttlegray;
+        @media (max-width: $mobile) {
+            font-size: 1.14rem;
+            line-height: 1.85rem;
+        }
     }
     &__title {
         font-weight: 600;
-        font-size: 3, 33rem;
-        line-height: 56px;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
         @media (max-width: $mobile) {
             font-size: 1.85rem;
             line-height: 2.57rem;
@@ -158,15 +164,15 @@ body {
     box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
     border-radius: 0.5rem;
     position: relative;
-    padding-bottom: 64px;
+    padding-bottom: 4rem;
     @media (max-width: $mobile) {
         width: 90%;
         margin-bottom: 1.15rem;
     }
     &__content {
-        margin-left: 32px;
-        margin-right: 32px;
-        margin-top: 48px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 3rem;
         @media (max-width: $mobile) {
             margin-left: 2rem;
             margin-right: 2rem;
@@ -226,8 +232,8 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
-    margin-left: 9vw;
-    margin-right: 9vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
     @media (max-width: $mobile) {
         display: flex;
         flex-direction: column;
@@ -239,14 +245,14 @@ body {
 .projects {
     flex-direction: column;
     background: $catskill;
-    padding-bottom: 128px;
+    padding-bottom: 8rem;
     @media (max-width: $mobile) {
-        padding-bottom: 40px;
+        padding-bottom: 2.85rem;
     }
 }
 
 .projects-header {
-    margin-left: 9vw;
+    margin-left: 6vw;
     display: block;
     max-width: 580px;
     width: 100%;
@@ -282,26 +288,36 @@ body {
 .skill-group {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
     width: 100%;
     @media (max-width: $mobile) {
         grid-template-columns: 1fr;
-        margin-bottom: 48px;
+        margin-bottom: 3.42rem;
     }
     &__title {
         margin: 0;
         font-weight: 600;
         font-size: 2rem;
-        line-height: 68px;
+        line-height: 2.75rem;
+        max-width: 370px;
         width: 100%;
         position: relative;
+        @media (max-width: $mobile) {
+            font-size: 1.57rem;
+            line-height: 2.28rem;
+        }
         &:before {
             position: absolute;
             content: "";
             height: 4px;
             width: 80px;
             border-radius: 8px;
+            top: -10px;
             transform: matrix(1, 0, 0, -1, 0, 0);
+            @media (max-width: $mobile) {
+                width: 40px;
+                top: -10px;
+            }
         }
         &--first::before {
             background: $malachite;
@@ -316,16 +332,16 @@ body {
 }
 
 .skill-list {
-    margin-left: 9vw;
-    margin-top: 24px;
+    margin-left: 6vw;
+    margin-top: 1.5rem;
     column-count: 2;
-    column-gap: 30px;
-    font-size: 1rem;
+    column-gap: 1.875rem;
+    font-size: 1.125rem;
     @media (max-width: $mobile) {
         column-count: 1;
         margin-left: 0px;
-        font-size: 1rem;
-        padding-inline-start: 16px;
+        font-size: 0.85rem;
+        padding-inline-start: 1.14rem;
     }
     &__element {
         font-weight: normal;
@@ -336,6 +352,7 @@ body {
         color: $shuttlegray;
         margin-left: 10px;
         margin-top: -4px;
+        top: -12px;
         position: relative;
         &::before {
             content: "";
@@ -372,29 +389,33 @@ body {
 }
 
 .skills {
-    margin-top: 200px;
-    margin-left: 9vw;
+    margin-top: 12.5rem;
+    margin-left: 6vw;
+    margin-right: 6vw;
     @media (max-width: $mobile) {
-        margin: 20px 20px 0 20px;
+        margin: 8.5rem 1.14rem 0 1.14rem;
     }
     &__title {
         width: 100%;
         font-weight: 600;
-        font-size: 36px;
-        line-height: 48px;
+        font-size: 2.25rem;
+        line-height: 3rem;
         @media (max-width: $mobile) {
             text-align: center;
+            font-size: 1.71rem;
+            line-height: 2.28rem;
         }
     }
     &__separator {
         width: 100%;
-        margin-top: -15px;
+        margin-top: -1rem;
         border-bottom: 2px solid $ghost;
         opacity: 0.5;
-        margin-bottom: 156px;
+        margin-bottom: 9.75rem;
         @media (max-width: $mobile) {
             text-align: center;
-            margin-bottom: 62px;
+            margin-top: 0.85rem;
+            margin-bottom: 4.42rem;
         }
     }
 }
