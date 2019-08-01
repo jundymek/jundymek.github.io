@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_variables";
+@import "_animations";
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,600&display=swap&subset=latin-ext");
 
 html {
@@ -142,6 +143,7 @@ body {
         font-size: 1.25rem;
         line-height: 2.25rem;
         color: $shuttlegray;
+        animation: slide-left .6s ease-out;
         @media (max-width: $mobile) {
             font-size: 1.14rem;
             line-height: 1.85rem;
@@ -151,6 +153,8 @@ body {
         font-weight: 600;
         font-size: 2.5rem;
         line-height: 3.5rem;
+        margin-left: 0px;
+        animation: slide-right .6s ease-out; 
         @media (max-width: $mobile) {
             font-size: 1.85rem;
             line-height: 2.57rem;
