@@ -79,12 +79,14 @@ body {
 }
 
 .main {
-    width: 100%;
+    max-width: 1440px;
     height: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    border: 16px solid #171f3f;
+    border: 1rem solid #171f3f;
     @media (max-width: $mobile) {
+        width: 100%;
         border: none;
     }
 }

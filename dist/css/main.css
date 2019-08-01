@@ -383,8 +383,9 @@ body {
               transform: matrix(1, 0, 0, -1, 0, 0); }
 
 .main {
-  width: 100%;
+  max-width: 1440px;
   height: 100%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,9 +393,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 16px solid #171f3f; }
+  border: 1rem solid #171f3f; }
   @media (max-width: 640px) {
     .main {
+      width: 100%;
       border: none; } }
 
 .header {
