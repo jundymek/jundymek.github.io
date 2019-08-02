@@ -392,7 +392,7 @@ body {
         -ms-flex-direction: row;
             flex-direction: row; }
   .footer__paragraph {
-    max-width: 90vw;
+    max-width: 580px;
     margin-left: 6vw;
     font-weight: 300;
     font-size: 1.25rem;
@@ -466,9 +466,9 @@ body {
     opacity: 1; }
     .header__image-wrapper:hover .header__image--photo {
       opacity: 1;
-      -webkit-transition: opacity .5s ease-out;
-      -o-transition: opacity .5s ease-out;
-      transition: opacity .5s ease-out; }
+      -webkit-transition: opacity 0.5s ease-out;
+      -o-transition: opacity 0.5s ease-out;
+      transition: opacity 0.5s ease-out; }
   .header__email {
     color: #0593FB;
     font-weight: 500;
@@ -487,9 +487,9 @@ body {
     color: #0593FB;
     font-weight: 500;
     display: inline-block;
-    -webkit-transition: .2s ease-in-out;
-    -o-transition: .2s ease-in-out;
-    transition: .2s ease-in-out; }
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
     .header__link:hover {
       color: #2251cc;
       -webkit-transform: scale(1.01);
@@ -501,8 +501,8 @@ body {
     font-size: 1.25rem;
     line-height: 2.25rem;
     color: #52606D;
-    -webkit-animation: slide-left .6s ease-out;
-            animation: slide-left .6s ease-out; }
+    -webkit-animation: slide-left 0.6s ease-out;
+            animation: slide-left 0.6s ease-out; }
     @media (max-width: 640px) {
       .header__paragraph {
         font-size: 1.14rem;
@@ -512,8 +512,8 @@ body {
     font-size: 2.5rem;
     line-height: 3.5rem;
     margin-left: 0px;
-    -webkit-animation: slide-right .6s ease-out;
-            animation: slide-right .6s ease-out; }
+    -webkit-animation: slide-right 0.6s ease-out;
+            animation: slide-right 0.6s ease-out; }
     @media (max-width: 640px) {
       .header__title {
         font-size: 1.85rem;
@@ -527,15 +527,13 @@ body {
   border-radius: 0.5rem;
   position: relative;
   padding-bottom: 4rem;
-  -webkit-transition: background .4s ease-in-out;
-  -o-transition: background .4s ease-in-out;
-  transition: background .4s ease-in-out; }
+  -webkit-transition: background 0.4s ease-in-out;
+  -o-transition: background 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out; }
   @media (max-width: 640px) {
     .project {
       width: 90%;
       margin-bottom: 1.15rem; } }
-  .project:hover {
-    background: #CBD2D9; }
   .project__content {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -552,10 +550,14 @@ body {
   .project__link {
     padding: 10px;
     color: #0593FB;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 2rem;
     text-decoration: none;
-    -webkit-transition: color .4s ease-in-out;
-    -o-transition: color .4s ease-in-out;
-    transition: color .4s ease-in-out;
+    -webkit-transition: color 0.4s ease-in-out;
+    -o-transition: color 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out;
     cursor: pointer; }
     .project__link:hover {
       color: #2251cc;
@@ -576,6 +578,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
+    padding-right: 3rem;
     bottom: 0;
     width: 100%;
     background: #F5F7FA;
@@ -586,7 +589,8 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    border-radius: 0.5rem; }
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem; }
   .project__logo {
     margin-bottom: -10px; }
   .project__title {

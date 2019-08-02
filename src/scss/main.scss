@@ -55,7 +55,7 @@ body {
         flex-direction: row;
     }
     &__paragraph {
-        max-width: 90vw;
+        max-width: 580px;
         margin-left: 6vw;
         font-weight: 300;
         font-size: 1.25rem;
@@ -109,14 +109,13 @@ body {
         margin-top: 1px;
     }
     &__image--photo {
-      display: block;
-      opacity: 0;
-      width: 104px;
-      height: 104px;
-      position: absolute;
-      top: 0;
-      
-  }
+        display: block;
+        opacity: 0;
+        width: 104px;
+        height: 104px;
+        position: absolute;
+        top: 0;
+    }
     &__image-wrapper {
         position: relative;
         display: block;
@@ -128,9 +127,9 @@ body {
         border: 8px solid $ghost;
         border-radius: 50%;
         opacity: 1;
-        &:hover .header__image--photo{
-          opacity: 1;
-          transition: opacity .5s ease-out;
+        &:hover .header__image--photo {
+            opacity: 1;
+            transition: opacity 0.5s ease-out;
         }
     }
     &__email {
@@ -153,10 +152,10 @@ body {
         color: $azure;
         font-weight: 500;
         display: inline-block;
-        transition: .2s ease-in-out;
+        transition: 0.2s ease-in-out;
         &:hover {
-          color: $mariner;
-          transform: scale(1.01);
+            color: $mariner;
+            transform: scale(1.01);
         }
     }
     &__paragraph {
@@ -165,7 +164,7 @@ body {
         font-size: 1.25rem;
         line-height: 2.25rem;
         color: $shuttlegray;
-        animation: slide-left .6s ease-out;
+        animation: slide-left 0.6s ease-out;
         @media (max-width: $mobile) {
             font-size: 1.14rem;
             line-height: 1.85rem;
@@ -176,7 +175,7 @@ body {
         font-size: 2.5rem;
         line-height: 3.5rem;
         margin-left: 0px;
-        animation: slide-right .6s ease-out; 
+        animation: slide-right 0.6s ease-out;
         @media (max-width: $mobile) {
             font-size: 1.85rem;
             line-height: 2.57rem;
@@ -191,13 +190,10 @@ body {
     border-radius: 0.5rem;
     position: relative;
     padding-bottom: 4rem;
-    transition: background .4s ease-in-out;
+    transition: background 0.4s ease-in-out;
     @media (max-width: $mobile) {
         width: 90%;
         margin-bottom: 1.15rem;
-    }
-    &:hover {
-      background: $ghost;
     }
     &__content {
         margin-left: 2rem;
@@ -217,12 +213,16 @@ body {
     &__link {
         padding: 10px;
         color: $azure;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 2rem;
         text-decoration: none;
-        transition: color .4s ease-in-out;
+        transition: color 0.4s ease-in-out;
         cursor: pointer;
         &:hover {
             color: $mariner;
-            text-decoration: underline;          
+            text-decoration: underline;
         }
     }
     &__link-icon {
@@ -239,13 +239,15 @@ body {
     &__links-wrapper {
         display: flex;
         position: absolute;
+        padding-right: 3rem;
         bottom: 0;
         width: 100%;
         background: $catskill;
         height: 64px;
         align-items: center;
         justify-content: flex-end;
-        border-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
     }
     &__logo {
         margin-bottom: -10px;
@@ -350,7 +352,6 @@ body {
                 width: 40px;
                 top: -10px;
             }
-            
         }
         &--first::before {
             background: $malachite;
