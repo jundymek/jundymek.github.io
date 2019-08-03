@@ -266,6 +266,10 @@ body {
         justify-content: flex-end;
         border-bottom-left-radius: 0.5rem;
         border-bottom-right-radius: 0.5rem;
+        @media (max-width: 350px) {
+            justify-content: center;
+            padding-right: 0;
+        }
     }
     &__logo {
         margin-bottom: -10px;
