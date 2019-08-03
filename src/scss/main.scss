@@ -101,7 +101,6 @@ body {
 
 .main {
     height: 100%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     border: 1rem solid $bigstone;
@@ -288,7 +287,7 @@ body {
     margin-left: 6vw;
     margin-right: 6vw;
     height: auto;
-    @media (max-width: $mobile), (max-width: $tablet) {
+    @media (max-width: $smalltablet) {
         display: flex;
         flex-direction: column;
         margin: 0;
@@ -316,13 +315,14 @@ body {
         width: 20rem;
         height: 3rem;
         box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+        transition: background 0.4s ease-out, color 0.4s ease-out;
         @media (max-width: $mobile) {
             width: 50%;
         }
         &:hover {
             @media (min-width: $mobile) {
-                animation: shadow-drop-center 0.4s
-                    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+                background: $azure;
+                color: #ffffff;
             }
         }
     }
@@ -369,6 +369,7 @@ body {
 .skill-group {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-column-gap: 20vw;
     margin-bottom: 6.25rem;
     width: 100%;
     @media (max-width: $mobile) {
@@ -419,9 +420,8 @@ body {
 .skill-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 14vw;
     margin-top: 1rem;
-    column-gap: 5.5rem;
+    grid-column-gap: 1.5rem;
     font-size: 1.125rem;
     @media (max-width: $tablet) {
         grid-template-columns: 1fr 1fr;
