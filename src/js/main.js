@@ -13,7 +13,6 @@ const getRepos = () => {
             if (resp.message && resp.message.includes("Not Found")) {
                 userNotFound(username);
             } else {
-                console.log(resp)
                 localStorage.setItem('allData', JSON.stringify(resp))
                 listRepos(resp.slice(0, 4));
             }
@@ -69,7 +68,6 @@ function  scroll() {
       arrow.style.display =  'none'
     }
   }
-
 
 getRepos();
 

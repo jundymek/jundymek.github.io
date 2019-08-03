@@ -423,15 +423,15 @@ body {
     margin-top: 1rem;
     column-gap: 5.5rem;
     font-size: 1.125rem;
-    @media (max-width: $mobile) {
-        grid-template-columns: 1fr;
-        margin-top: 1.6rem;
+    @media (max-width: $tablet) {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 2.6rem;
         margin-left: 2px;
         font-size: 1rem;
         line-height: 2.57rem;
         padding-inline-start: 1.14rem;
     }
-    @media (max-width: $tablet) {
+    @media (max-width: $mobile) {
         grid-template-columns: 1fr;
         margin-top: 1.6rem;
         margin-left: 2px;
@@ -446,6 +446,8 @@ body {
         width: 100%;
         list-style-type: none;
         color: $shuttlegray;
+        display: flex;
+        align-content: center;
         margin-left: 10px;
         margin-top: -4px;
         top: -10px;
@@ -455,6 +457,7 @@ body {
             width: 1.125rem;
             height: 1.125rem;
             position: absolute;
+            background-size: cover;
             left: -28px;
             top: 10px;
             @media (max-width: $mobile) {
@@ -465,21 +468,12 @@ body {
         }
         &--first::before {
             background-image: url(../assets/img/check-circle.png);
-            @media (max-width: $mobile) {
-                background-image: url(../assets/img/check-circle-mobile.png);
-            }
         }
         &--second::before {
             background-image: url(../assets/img/check-circle-purple.png);
-            @media (max-width: $mobile) {
-                background-image: url(../assets/img/check-circle-purple-mobile.png);
-            }
         }
         &--third::before {
             background-image: url(../assets/img/check-circle-blue.png);
-            @media (max-width: $mobile) {
-                background-image: url(../assets/img/check-circle-blue-mobile.png);
-            }
         }
     }
 }
