@@ -623,6 +623,12 @@ body {
             justify-content: flex-end;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem; }
+    @media (max-width: 350px) {
+      .project__links-wrapper {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding-right: 0; } }
   .project__logo {
     margin-bottom: -10px; }
   .project__title {
