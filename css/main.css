@@ -374,7 +374,7 @@ html {
 
 .arrow-up {
   position: fixed;
-  opacity: .6;
+  opacity: 0.6;
   font-size: 2rem;
   text-align: center;
   text-decoration: none;
