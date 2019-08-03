@@ -192,7 +192,6 @@ body {
     border-radius: 0.5rem;
     position: relative;
     padding-bottom: 4rem;
-    transition: background 0.4s ease-in-out;
     @media (max-width: $mobile), (max-width: $tablet) {
         width: 90%;
         margin-bottom: 1.15rem;
@@ -270,6 +269,7 @@ body {
     grid-row-gap: 1.5rem;
     margin-left: 6vw;
     margin-right: 6vw;
+    height: auto;
     @media (max-width: $mobile), (max-width: $tablet) {
         display: flex;
         flex-direction: column;
@@ -284,6 +284,33 @@ body {
     padding-bottom: 8rem;
     @media (max-width: $mobile) {
         padding-bottom: 2.85rem;
+    }
+    &__more {
+        all: unset;
+        text-align: center;
+        font-size: 1.2rem;
+        background: $catskill;
+        border: 1px solid $azure;
+        color: $azure;
+        cursor: pointer;
+        border-radius: 8px;
+        margin-top: 2rem;
+        width: 20rem;
+        height: 3rem;
+        box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+        @media (max-width: $mobile) {
+            width: 50%;
+        }
+        @media (hover: hover) {
+            &:hover {
+                animation: shadow-drop-center 0.4s
+                    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            }
+        }
+    }
+    &__more-wrapper {
+        display: flex;
+        justify-content: center;
     }
 }
 

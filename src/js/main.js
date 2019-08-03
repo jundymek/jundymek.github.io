@@ -3,7 +3,7 @@
 // place your code below
 
 const project = document.querySelector('.project-list-wrapper--js');
-const buttonMore = document.querySelector('.more--js');
+const buttonMore = document.querySelector('.projects__more--js');
 
 const getRepos = () => {
     fetch(`https://api.github.com/users/jundymek/repos?sort=updated&direction=desc`)
@@ -26,10 +26,10 @@ const listRepos = (data) => {
     if (data.length) {
         let tempData = data;
         project.innerHTML = ''
-        let more = data.length + 4;
+        let moreData = data.length + 4;
         buttonMore.addEventListener('click', () => {
-            let tempData = JSON.parse(localStorage.getItem('allData')).slice(0, more)
-            if (more >= JSON.parse(localStorage.getItem('allData')).length) {
+            let tempData = JSON.parse(localStorage.getItem('allData')).slice(0, moreData)
+            if (moreData >= JSON.parse(localStorage.getItem('allData')).length) {
                 buttonMore.style.display = 'none';
             }
             listRepos(tempData)

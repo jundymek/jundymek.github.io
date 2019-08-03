@@ -340,6 +340,22 @@ template {
     -webkit-transform: translateX(0);
             transform: translateX(0); } }
 
+@-webkit-keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35); } }
+
+@keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35); } }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -528,10 +544,7 @@ body {
           box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
   border-radius: 0.5rem;
   position: relative;
-  padding-bottom: 4rem;
-  -webkit-transition: background 0.4s ease-in-out;
-  -o-transition: background 0.4s ease-in-out;
-  transition: background 0.4s ease-in-out; }
+  padding-bottom: 4rem; }
   @media (max-width: 640px), (max-width: 780px) {
     .project {
       width: 90%;
@@ -610,7 +623,8 @@ body {
   grid-column-gap: 1.5rem;
   grid-row-gap: 1.5rem;
   margin-left: 6vw;
-  margin-right: 6vw; }
+  margin-right: 6vw;
+  height: auto; }
   @media (max-width: 640px), (max-width: 780px) {
     .project-list-wrapper {
       display: -webkit-box;
@@ -635,6 +649,34 @@ body {
   @media (max-width: 640px) {
     .projects {
       padding-bottom: 2.85rem; } }
+  .projects__more {
+    all: unset;
+    text-align: center;
+    font-size: 1.2rem;
+    background: #F5F7FA;
+    border: 1px solid #0593FB;
+    color: #0593FB;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 2rem;
+    width: 20rem;
+    height: 3rem;
+    -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+            box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09); }
+    @media (max-width: 640px) {
+      .projects__more {
+        width: 50%; } }
+    @media (hover: hover) {
+      .projects__more:hover {
+        -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+                animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; } }
+  .projects__more-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 .projects-header {
   margin-left: 6vw;
