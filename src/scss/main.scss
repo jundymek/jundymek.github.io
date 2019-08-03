@@ -1,7 +1,7 @@
 @import "_normalize";
 @import "_variables";
 @import "_animations";
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,600&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext");
 
 html {
     box-sizing: border-box;
@@ -38,7 +38,7 @@ body {
         position: relative;
         &::after {
             position: absolute;
-            margin: 2.2rem 0 0 -100%;
+            margin: 2.375rem 0 0 -100%;
             content: "";
             border-bottom: 3px solid $azure;
             border-radius: 41px;
@@ -135,13 +135,15 @@ body {
     &__email {
         color: $azure;
         font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 2rem;
         text-decoration: none;
         position: relative;
         top: 1.87rem;
         &::after {
             position: absolute;
             left: 0;
-            margin: 30px 0 -20px 0;
+            margin: 2.375rem 0 -1.25rem 0;
             content: "";
             border-bottom: 3px solid $azure;
             border-radius: 41px;
@@ -268,7 +270,7 @@ body {
     grid-row-gap: 1.5rem;
     margin-left: 6vw;
     margin-right: 6vw;
-    @media (max-width: $mobile), (max-width: $tablet){
+    @media (max-width: $mobile), (max-width: $tablet) {
         display: flex;
         flex-direction: column;
         margin: 0;
@@ -329,9 +331,9 @@ body {
         margin-bottom: 3.42rem;
     }
     @media (max-width: $tablet) {
-      grid-template-columns: 1fr;
-      margin-bottom: 3.42rem;
-  }
+        grid-template-columns: 1fr;
+        margin-bottom: 3.42rem;
+    }
     &__title {
         margin: 0;
         font-weight: 600;
@@ -385,13 +387,13 @@ body {
         padding-inline-start: 1.14rem;
     }
     @media (max-width: $tablet) {
-      grid-template-columns: 1fr;
-      margin-top: 1.6rem;
-      margin-left: 2px;
-      font-size: 1rem;
-      line-height: 2.57rem;
-      padding-inline-start: 1.14rem;
-  }
+        grid-template-columns: 1fr;
+        margin-top: 1.6rem;
+        margin-left: 2px;
+        font-size: 1rem;
+        line-height: 2.57rem;
+        padding-inline-start: 1.14rem;
+    }
     &__element {
         font-weight: normal;
         line-height: 2.5rem;
