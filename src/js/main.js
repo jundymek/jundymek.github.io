@@ -3,6 +3,7 @@
 // place your code below
 
 const project = document.querySelector('.project-list-wrapper--js');
+const buttonMore = document.querySelector('.more--js');
 
 const getRepos = () => {
     fetch(`https://api.github.com/users/jundymek/repos?sort=updated&direction=desc`)
@@ -12,7 +13,8 @@ const getRepos = () => {
                 userNotFound(username);
             } else {
                 console.log(resp)
-                listRepos(resp);
+                localStorage.setItem('allData', JSON.stringify(resp))
+                listRepos(resp.slice(0, 4));
             }
         })
         .catch((error) => {
@@ -22,11 +24,22 @@ const getRepos = () => {
 
 const listRepos = (data) => {
     if (data.length) {
-        for (let i = 0; i < data.length; i++) {
-            const name = data[i]["name"];
-            const path = data[i]["html_url"];
-            const live = data[i]["homepage"];
-            const description = data[i]["description"];
+        let tempData = data;
+        project.innerHTML = ''
+        let more = data.length + 4;
+        buttonMore.addEventListener('click', () => {
+            let tempData = JSON.parse(localStorage.getItem('allData')).slice(0, more)
+            if (more >= JSON.parse(localStorage.getItem('allData')).length) {
+                buttonMore.style.display = 'none';
+            }
+            listRepos(tempData)
+        }
+        )
+        for (let i = 0; i < tempData.length; i++) {
+            const name = tempData[i]["name"];
+            const path = tempData[i]["html_url"];
+            const live = tempData[i]["homepage"];
+            const description = tempData[i]["description"];
             project.innerHTML += `
             <section class="project">
                 <div class="project__content">
