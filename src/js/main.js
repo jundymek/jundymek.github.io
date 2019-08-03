@@ -48,9 +48,8 @@ const listRepos = (data) => {
                     <p class="project__description">${description ? description : 'No description for this project'}</p>
                 </div>
                 <div class="project__links-wrapper">
-                <img src="/assets/img/demo_icon.png" alt="Demo button." class="project__link-icon"><a href="${live}"
-                    class="project__link">Demo</a>
-                <span class="project__link-separator"></span>
+                ${live ? `<img src="/assets/img/demo_icon.png" alt="Demo button." class="project__link-icon"><a href="${live}"
+                class="project__link">Demo</a><span class="project__link-separator"></span>` : ''}
                 <img src="/assets/img/code_icon.png" alt="Code button." class="project__link-icon"><a href="${path}"
                     class="project__link">Github</a>
                 </div>
