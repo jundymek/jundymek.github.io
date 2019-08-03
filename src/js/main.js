@@ -4,6 +4,7 @@
 
 const project = document.querySelector('.project-list-wrapper--js');
 const buttonMore = document.querySelector('.projects__more--js');
+window.addEventListener("scroll", scroll);
 
 const getRepos = () => {
     fetch(`https://api.github.com/users/jundymek/repos?sort=updated&direction=desc`)
@@ -59,6 +60,16 @@ const listRepos = (data) => {
         }
     }
 }
+
+function  scroll() {
+    const  arrow  =  document.querySelector(".arrow-up--js")
+    if (scrollY  >  0) {
+      arrow.style.display =  'block'
+    } else {
+      arrow.style.display =  'none'
+    }
+  }
+
 
 getRepos();
 

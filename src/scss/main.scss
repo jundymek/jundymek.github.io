@@ -18,6 +18,25 @@ html {
 *:after {
     box-sizing: inherit;
 }
+.arrow-up {
+    position: fixed;
+    opacity: .6;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: $azure;
+    padding-top: 2px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $azure;
+    border-radius: 50%;
+    right: 3rem;
+    bottom: 2rem;
+    @media (max-width: 768px) {
+        right: 2rem;
+        padding-top: 4px;
+    }
+}
 
 body {
     color: $bigstone;
@@ -301,7 +320,7 @@ body {
         @media (max-width: $mobile) {
             width: 50%;
         }
-        @media (hover: hover) {
+        @media (min-width: $mobile) {
             &:hover {
                 animation: shadow-drop-center 0.4s
                     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
