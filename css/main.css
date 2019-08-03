@@ -372,6 +372,25 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
+.arrow-up {
+  position: fixed;
+  opacity: .6;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: #0593FB;
+  padding-top: 2px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #0593FB;
+  border-radius: 50%;
+  right: 3rem;
+  bottom: 2rem; }
+  @media (max-width: 768px) {
+    .arrow-up {
+      right: 2rem;
+      padding-top: 4px; } }
+
 body {
   color: #171F3F; }
 
@@ -666,7 +685,7 @@ body {
     @media (max-width: 640px) {
       .projects__more {
         width: 50%; } }
-    @media (hover: hover) {
+    @media (min-width: 640px) {
       .projects__more:hover {
         -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
                 animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; } }
