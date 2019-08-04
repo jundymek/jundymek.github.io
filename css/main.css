@@ -384,6 +384,7 @@ html {
   height: 40px;
   border: 2px solid #0593FB;
   border-radius: 50%;
+  display: table-cell;
   right: 3rem;
   bottom: 2rem; }
   @media (max-width: 768px) {
