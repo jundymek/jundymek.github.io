@@ -379,17 +379,17 @@ html {
   text-align: center;
   text-decoration: none;
   color: #0593FB;
-  padding-top: 2px;
   width: 40px;
   height: 40px;
   border: 2px solid #0593FB;
   border-radius: 50%;
+  display: table-cell;
+  line-height: 40px;
   right: 3rem;
   bottom: 2rem; }
   @media (max-width: 768px) {
     .arrow-up {
-      right: 2rem;
-      padding-top: 4px; } }
+      right: 2rem; } }
 
 body {
   color: #171F3F; }
