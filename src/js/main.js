@@ -10,13 +10,10 @@ const getRepos = () => {
     fetch(`https://api.github.com/users/jundymek/repos?sort=updated&direction=desc`)
         .then(resp => resp.json())
         .then(resp => {
-            if (resp.message && resp.message.includes("Not Found")) {
-                userNotFound(username);
-            } else {
-                localStorage.setItem('allData', JSON.stringify(resp))
-                listRepos(resp.slice(0, 4));
-            }
-        })
+            localStorage.setItem('allData', JSON.stringify(resp))
+            listRepos(resp.slice(0, 4));
+        }
+        )
         .catch((error) => {
             console.log(error)
         });
@@ -59,14 +56,14 @@ const listRepos = (data) => {
     }
 }
 
-function  scroll() {
-    const  arrow  =  document.querySelector(".arrow-up--js")
-    if (scrollY  >  0) {
-      arrow.style.display =  'block'
+function scroll() {
+    const arrow = document.querySelector(".arrow-up--js")
+    if (scrollY > 0) {
+        arrow.style.display = 'block'
     } else {
-      arrow.style.display =  'none'
+        arrow.style.display = 'none'
     }
-  }
+}
 
 getRepos();
 
