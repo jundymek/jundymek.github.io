@@ -1,0 +1,56 @@
+.footer {
+    background: $bigstone;
+    color: #ffffff;
+    padding-bottom: 8.25rem;
+    height: auto;
+    &__email {
+        color: $azure;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 6vw;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        position: relative;
+        &::after {
+            position: absolute;
+            margin: 2.375rem 0 0 -100%;
+            content: "";
+            border-bottom: 3px solid $azure;
+            border-radius: 41px;
+            width: 100%;
+        }
+    }
+    &__link {
+        margin-right: 0.625rem;
+        margin-bottom: 2rem;
+    }
+    &__links-wrapper {
+        margin-left: 6vw;
+        display: flex;
+        flex-direction: row;
+    }
+    &__paragraph {
+        max-width: 580px;
+        margin-left: 6vw;
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+    &__title {
+        margin-left: 6vw;
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 44px;
+        margin-top: 140px;
+        &:before {
+            position: absolute;
+            margin-top: -20px;
+            content: "";
+            height: 4px;
+            width: 80px;
+            border-radius: 8px;
+            background: $azure;
+            transform: matrix(1, 0, 0, -1, 0, 0);
+        }
+    }
+}
