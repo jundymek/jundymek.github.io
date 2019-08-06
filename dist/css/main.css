@@ -357,8 +357,9 @@ template {
             box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35); } }
 
 .header {
-  padding: 6vw 0px 0 6vw;
-  max-width: 840px;
+  padding: 8rem 1rem 0 1rem;
+  max-width: 1187px;
+  margin: 0 auto;
   width: 100%; }
   @media (max-width: 640px) {
     .header {
@@ -422,7 +423,7 @@ template {
           -ms-transform: scale(1.01);
               transform: scale(1.01); }
   .header__paragraph {
-    max-width: 680px;
+    max-width: 781px;
     font-weight: 300;
     font-size: 1.25rem;
     line-height: 2.25rem;
@@ -434,6 +435,7 @@ template {
         font-size: 1.14rem;
         line-height: 1.85rem; } }
   .header__title {
+    max-width: 781px;
     font-weight: 600;
     font-size: 2.5rem;
     line-height: 3.5rem;
@@ -862,7 +864,12 @@ html {
           box-sizing: inherit; }
 
 body {
-  color: #171F3F; }
+  color: #171F3F;
+  border: 1rem solid #171F3F; }
+  @media (max-width: 640px) {
+    body {
+      width: 100%;
+      border: none; } }
 
 .main {
   height: 100%;
@@ -872,11 +879,6 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  border: 1rem solid #171F3F; }
-  @media (max-width: 640px) {
-    .main {
-      width: 100%;
-      border: none; } }
+          flex-direction: column; }
 
 /*# sourceMappingURL=main.css.map */

@@ -27,15 +27,15 @@ html {
 
 body {
     color: $bigstone;
+    border: 1rem solid $bigstone;
+    @media (max-width: $mobile) {
+        width: 100%;
+        border: none;
+    }
 }
 
 .main {
     height: 100%;
     display: flex;
     flex-direction: column;
-    border: 1rem solid $bigstone;
-    @media (max-width: $mobile) {
-        width: 100%;
-        border: none;
-    }
 }

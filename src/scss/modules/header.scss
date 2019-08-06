@@ -1,6 +1,7 @@
 .header {
-    padding: 6vw 0px 0 6vw;
-    max-width: 840px;
+    padding: 8rem 1rem 0 1rem;
+    max-width: 1187px;
+    margin: 0 auto;
     width: 100%;
     @media (max-width: $mobile) {
         padding: 4.57rem 1.14rem 0 1.14rem;
@@ -66,7 +67,7 @@
         }
     }
     &__paragraph {
-        max-width: 680px;
+        max-width: 781px;
         font-weight: 300;
         font-size: 1.25rem;
         line-height: 2.25rem;
@@ -78,6 +79,7 @@
         }
     }
     &__title {
+        max-width: 781px;
         font-weight: 600;
         font-size: 2.5rem;
         line-height: 3.5rem;
