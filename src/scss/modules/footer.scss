@@ -1,13 +1,14 @@
 .footer {
+    padding: 8rem 1.5rem 0 1.5rem;
+    max-width: 1187px;
+    margin: 0 auto;
     background: $bigstone;
     color: #ffffff;
-    padding-bottom: 8.25rem;
     height: auto;
     &__email {
         color: $azure;
         font-weight: 500;
         text-decoration: none;
-        margin-left: 6vw;
         font-size: 1.25rem;
         line-height: 2rem;
         position: relative;
@@ -25,23 +26,19 @@
         margin-bottom: 2rem;
     }
     &__links-wrapper {
-        margin-left: 6vw;
         display: flex;
         flex-direction: row;
     }
     &__paragraph {
         max-width: 580px;
-        margin-left: 6vw;
         font-weight: 300;
         font-size: 1.25rem;
         line-height: 2.25rem;
     }
     &__title {
-        margin-left: 6vw;
         font-weight: 600;
         font-size: 2rem;
         line-height: 44px;
-        margin-top: 140px;
         &:before {
             position: absolute;
             margin-top: -20px;
@@ -53,4 +50,9 @@
             transform: matrix(1, 0, 0, -1, 0, 0);
         }
     }
+}
+
+.footer-wrapper {
+    background: $bigstone;
+    width: 100%;
 }

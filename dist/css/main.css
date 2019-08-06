@@ -447,15 +447,16 @@ template {
         line-height: 2.57rem; } }
 
 .footer {
+  padding: 8rem 1.5rem 0 1.5rem;
+  max-width: 1187px;
+  margin: 0 auto;
   background: #171F3F;
   color: #ffffff;
-  padding-bottom: 8.25rem;
   height: auto; }
   .footer__email {
     color: #0593FB;
     font-weight: 500;
     text-decoration: none;
-    margin-left: 6vw;
     font-size: 1.25rem;
     line-height: 2rem;
     position: relative; }
@@ -470,7 +471,6 @@ template {
     margin-right: 0.625rem;
     margin-bottom: 2rem; }
   .footer__links-wrapper {
-    margin-left: 6vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -480,16 +480,13 @@ template {
             flex-direction: row; }
   .footer__paragraph {
     max-width: 580px;
-    margin-left: 6vw;
     font-weight: 300;
     font-size: 1.25rem;
     line-height: 2.25rem; }
   .footer__title {
-    margin-left: 6vw;
     font-weight: 600;
     font-size: 2rem;
-    line-height: 44px;
-    margin-top: 140px; }
+    line-height: 44px; }
     .footer__title:before {
       position: absolute;
       margin-top: -20px;
@@ -501,6 +498,10 @@ template {
       -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
           -ms-transform: matrix(1, 0, 0, -1, 0, 0);
               transform: matrix(1, 0, 0, -1, 0, 0); }
+
+.footer-wrapper {
+  background: #171F3F;
+  width: 100%; }
 
 .skill-group {
   display: -ms-grid;
