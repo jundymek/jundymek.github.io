@@ -357,7 +357,7 @@ template {
             box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35); } }
 
 .header {
-  padding: 8rem 1rem 0 1rem;
+  padding: 8rem 1.5rem 0 1.5rem;
   max-width: 1187px;
   margin: 0 auto;
   width: 100%; }
@@ -423,7 +423,7 @@ template {
           -ms-transform: scale(1.01);
               transform: scale(1.01); }
   .header__paragraph {
-    max-width: 781px;
+    max-width: 681px;
     font-weight: 300;
     font-size: 1.25rem;
     line-height: 2.25rem;
@@ -506,9 +506,9 @@ template {
 .skill-group {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr;
-  grid-template-columns: 1fr 2fr;
-  grid-column-gap: 20vw;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 8rem;
   margin-bottom: 6.25rem;
   width: 100%; }
   @media (max-width: 640px) {
@@ -526,8 +526,6 @@ template {
     font-weight: 600;
     font-size: 2rem;
     line-height: 2.75rem;
-    max-width: 370px;
-    width: 100%;
     position: relative; }
     @media (max-width: 640px) {
       .skill-group__title {
@@ -539,7 +537,7 @@ template {
       height: 4px;
       width: 80px;
       border-radius: 8px;
-      top: -10px;
+      top: -1.5rem;
       -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
           -ms-transform: matrix(1, 0, 0, -1, 0, 0);
               transform: matrix(1, 0, 0, -1, 0, 0); }
@@ -561,6 +559,9 @@ template {
   grid-template-columns: 1fr 1fr;
   margin-top: 1rem;
   grid-column-gap: 1.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 1.125rem; }
   @media (max-width: 1200px) {
     .skill-list {
@@ -585,8 +586,6 @@ template {
   .skill-list__element {
     font-weight: normal;
     line-height: 2.5rem;
-    max-width: 279px;
-    width: 100%;
     list-style-type: none;
     color: #52606D;
     display: -webkit-box;
@@ -594,7 +593,6 @@ template {
     display: flex;
     -ms-flex-line-pack: center;
         align-content: center;
-    margin-left: 10px;
     margin-top: -4px;
     top: -10px;
     position: relative; }
@@ -620,8 +618,10 @@ template {
 
 .skills {
   margin-top: 12.5rem;
-  margin-left: 6vw;
-  margin-right: 6vw; }
+  padding: 8rem 1.5rem 0 1.5rem;
+  width: 100%;
+  max-width: 1187px;
+  margin: 0 auto; }
   @media (max-width: 640px) {
     .skills {
       margin: 8.5rem 1.14rem 0 1.14rem; } }
@@ -629,23 +629,14 @@ template {
     width: 100%;
     font-weight: 600;
     font-size: 2.25rem;
-    line-height: 3rem; }
+    line-height: 3rem;
+    border-bottom: 2px solid #E3E6EA;
+    padding-bottom: 5px; }
     @media (max-width: 640px) {
       .skills__title {
         text-align: center;
         font-size: 1.71rem;
         line-height: 2.28rem; } }
-  .skills__separator {
-    width: 100%;
-    margin-top: -1rem;
-    border-bottom: 2px solid #CBD2D9;
-    opacity: 0.5;
-    margin-bottom: 9.75rem; }
-    @media (max-width: 640px) {
-      .skills__separator {
-        text-align: center;
-        margin-top: 0.85rem;
-        margin-bottom: 4.42rem; } }
 
 .project {
   width: 100%;
