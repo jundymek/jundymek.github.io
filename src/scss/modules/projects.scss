@@ -84,8 +84,6 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
-    margin-left: 6vw;
-    margin-right: 6vw;
     height: auto;
     @media (max-width: $smalltablet) {
         display: flex;
@@ -96,8 +94,11 @@
 }
 
 .projects {
+    padding: 8rem 1.5rem 0 1.5rem;
+    max-width: 1187px;
+    margin: 0 auto;
+    width: 100%;
     flex-direction: column;
-    background: $catskill;
     padding-bottom: 8rem;
     @media (max-width: $mobile) {
         padding-bottom: 2.85rem;
@@ -133,9 +134,9 @@
 }
 
 .projects-header {
-    margin-left: 6vw;
     display: block;
     max-width: 580px;
+    padding-bottom: 4rem;
     width: 100%;
     @media (max-width: $mobile), (max-width: $tablet) {
         text-align: center;
@@ -164,4 +165,9 @@
             line-height: 1.85rem;
         }
     }
+}
+
+.projects-wrapper {
+    width: 100%;
+    background: $catskill;
 }
