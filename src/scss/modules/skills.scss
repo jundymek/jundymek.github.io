@@ -61,7 +61,7 @@
     }
     @media (max-width: $mobile) {
         grid-template-columns: 1fr;
-        margin-top: .66rem;
+        margin-top: 0.66rem;
         margin-left: 1.33rem;
     }
     &__element {
@@ -85,13 +85,13 @@
             }
         }
         &--first::before {
-            background-image: url(../assets/img/check-circle.png);
+            background-image: url(../assets/img/check-circle-green.svg);
         }
         &--second::before {
-            background-image: url(../assets/img/check-circle-purple.png);
+            background-image: url(../assets/img/check-circle-purple.svg);
         }
         &--third::before {
-            background-image: url(../assets/img/check-circle-blue.png);
+            background-image: url(../assets/img/check-circle-blue.svg);
         }
     }
 }

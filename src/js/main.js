@@ -40,14 +40,14 @@ const listRepos = (data) => {
             project.innerHTML += `
             <section class="project">
                 <div class="project__content">
-                    <img class="project__logo" src="/assets/img/github_project_icon.png" alt="Github logo.">
+                    <img class="project__logo" src="/assets/img/github_project_icon.svg" alt="Github logo.">
                     <h3 class="project__title">${name}</h3>
                     <p class="project__description">${description ? description : 'No description for this project'}</p>
                 </div>
                 <div class="project__links-wrapper">
-                ${live ? `<img src="/assets/img/demo_icon.png" alt="Demo button." class="project__link-icon"><a href="${live}"
+                ${live ? `<img src="/assets/img/demo_icon.svg" alt="Demo button." class="project__link-icon"><a href="${live}"
                 class="project__link">Demo</a><span class="project__link-separator"></span>` : ''}
-                <img src="/assets/img/code_icon.png" alt="Code button." class="project__link-icon"><a href="${path}"
+                <img src="/assets/img/code_icon.svg" alt="Code button." class="project__link-icon"><a href="${path}"
                     class="project__link">Github</a>
                 </div>
             </section>
