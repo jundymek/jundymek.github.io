@@ -1,7 +1,6 @@
 .skill-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 8rem;
     margin-bottom: 6.25rem;
     width: 100%;
     @media (max-width: $mobile) {
@@ -14,15 +13,11 @@
     }
     &__title {
         margin: 0;
+        max-width: 379px;
         font-weight: 600;
         font-size: 2rem;
         line-height: 2.75rem;
-
         position: relative;
-        @media (max-width: $mobile) {
-            font-size: 1.57rem;
-            line-height: 2.28rem;
-        }
         &:before {
             position: absolute;
             content: "";
@@ -50,36 +45,30 @@
 
 .skill-list {
     display: grid;
+    margin: 0;
+    padding: 0;
     grid-template-columns: 1fr 1fr;
     margin-top: 1rem;
     grid-column-gap: 1.5rem;
-    justify-content: space-between;
     font-size: 1.125rem;
     @media (max-width: $tablet) {
         grid-template-columns: 1fr 1fr;
         margin-top: 2.6rem;
-        margin-left: 2px;
-        font-size: 1rem;
+        margin-left: 1rem;
+        // font-size: 1rem;
         line-height: 2.57rem;
         padding-inline-start: 1.14rem;
     }
     @media (max-width: $mobile) {
         grid-template-columns: 1fr;
-        margin-top: 1.6rem;
-        margin-left: 2px;
-        font-size: 1rem;
-        line-height: 2.57rem;
-        padding-inline-start: 1.14rem;
+        margin-top: .66rem;
+        margin-left: 1.33rem;
     }
     &__element {
         font-weight: normal;
         line-height: 2.5rem;
         list-style-type: none;
         color: $shuttlegray;
-        display: flex;
-        align-content: center;
-        margin-top: -4px;
-        top: -10px;
         position: relative;
         &::before {
             content: "";
@@ -113,20 +102,16 @@
     width: 100%;
     max-width: 1187px;
     margin: 0 auto;
-    @media (max-width: $mobile) {
-        margin: 8.5rem 1.14rem 0 1.14rem;
-    }
     &__title {
         width: 100%;
         font-weight: 600;
         font-size: 2.25rem;
         line-height: 3rem;
         border-bottom: 2px solid $gray;
-        padding-bottom: 5px;
+        padding-bottom: 1rem;
+        margin-bottom: 9.5rem;
         @media (max-width: $mobile) {
             text-align: center;
-            font-size: 1.71rem;
-            line-height: 2.28rem;
         }
     }
 }
