@@ -378,7 +378,12 @@ template {
         height: 80px; } }
   .header__image-wrapper {
     position: relative;
-    opacity: 1; }
+    width: 120px;
+    height: 120px; }
+    @media (max-width: 640px) {
+      .header__image-wrapper {
+        width: 80px;
+        height: 80px; } }
     .header__image-wrapper:hover .header__image--photo {
       opacity: 1;
       -webkit-transition: opacity 0.5s ease-out;
@@ -538,7 +543,6 @@ template {
   padding: 0;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  margin-top: 1rem;
   grid-column-gap: 1.5rem;
   font-size: 1.125rem; }
   @media (max-width: 1200px) {
